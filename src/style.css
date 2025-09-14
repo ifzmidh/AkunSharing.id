@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./assets/font/spaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Monserrat";
+  src: url("./assets/font/monserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+/* Terapkan ke seluruh elemen */
+* {
+  font-family: "Monserrat", serif;
+  --p-inputtext-background: transparent;
+  --p-divider-content-background: transparent;
+  --p-tabs-tablist-background: transparent;
+  --p-tabs-tabpanel-background: transparent;
+  --p-tabs-tab-background: transparent;
+  --p-accordion-header-background: transparent;
+  --p-accordion-content-background: transparent;
+  --p-accordion-header-active-background: transparent;
+  --p-accordion-header-hover-background: transparent;
+  --p-accordion-header-active-hover-background: transparent;
+  --p-tabs-nav-button-background: color-mix(in oklab, black 4%, white 100%);
+  --p-tabs-nav-button-shadow: 0px 0px 10px 20px
+    color-mix(in oklab, black 4%, white 100%);
+}
+
+.dark * {
+  --p-tabs-nav-button-background: #191919;
+  --p-tabs-nav-button-shadow: 0px 0px 10px 20px #191919;
+}
