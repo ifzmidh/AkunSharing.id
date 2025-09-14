@@ -27,19 +27,19 @@
       <a href=""
         ><img
           class="opacity-60 hover:opacity-100 transition-all"
-          src="./assets/Frame.png"
+          src=""
           alt=""
       /></a>
       <a href=""
         ><img
           class="opacity-60 hover:opacity-100 transition-all"
-          src="./assets/Frame.png"
+          src=""
           alt="" />
       </a>
       <a href=""
         ><img
           class="opacity-60 hover:opacity-100 transition-all"
-          src="./assets/Frame (1).png"
+          src=""
           alt=""
       /></a>
     </div>
