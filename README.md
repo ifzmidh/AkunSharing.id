@@ -62,6 +62,19 @@ Before running this project, make sure you have installed:
    ```bash
    git clone https://github.com/ifzmidh/AkunSharing.id.git
    cd AkunSharing.id
+   ```
+2. Install dependencies with Bun:
+   ```bash
+   bun install
+   ```
+3. Start development server:
+   ```bash
+   bunx --bun vite
+   ```
+4. (Optional) Preview production build:
+   ```bash
+   vite preview
+   ```
 
 ## Project Structure
 
