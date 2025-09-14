@@ -27,7 +27,7 @@
       <a href=""
         ><img
           class="opacity-60 hover:opacity-100 transition-all"
-          src="./assets/.png"
+          src="./assets/Frame.png"
           alt=""
       /></a>
       <a href=""
