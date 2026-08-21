@@ -15,13 +15,13 @@
       <RouterLink
         v-for="(page, index) in pages"
         :key="index"
-        to="/"
+        to="/auth"
         class="lg:text-lg text-sm font-medium hover:text-lime-600 hover:underline hover:underline-offset-4 dark:hover:text-lime-300 dark:text-white dark:hover:underline dark:hover:underline-offset-4"
         ><p>{{ page.name }}</p></RouterLink
       >
       <div class="h-10 flex items-center gap-x-2">
         <RouterLink
-          to="/"
+          to="/auth"
           :class="y > 30 ? 'border-white' : 'border-black'"
           class="h-full flex items-center border rounded-xl hover:bg-lime-800 hover:text-white dark:text-white dark:border-white dark:hover:bg-lime-300 dark:hover:text-black">
           <p class="lg:text-lg text-sm md:px-6 px-3">Hubungi</p>
@@ -48,24 +48,11 @@
         :class="isOpen ? 'left-2' : 'left-100'"
         class="absolute top-14 w-fit bg-white dark:bg-transparent dark:backdrop-blur-sm dark:border dark:rounded-xl shadow-md transition-all duration-300 ease-in-out">
         <RouterLink
-          to="/"
-          class="block p-2 hover:bg-gray-100 dark:hover:bg-lime-300 dark:hover:text-black rounded-xl"
-          >Home</RouterLink
-        >
-        <RouterLink
-          to="/"
-          class="block p-2 hover:bg-gray-100 dark:hover:bg-lime-300 dark:hover:text-black rounded-xl"
-          >About</RouterLink
-        >
-        <RouterLink
-          to="/"
-          class="block p-2 hover:bg-gray-100 dark:hover:bg-lime-300 dark:hover:text-black rounded-xl"
-          >Services</RouterLink
-        >
-        <RouterLink
-          to="/"
-          class="block p-2 hover:bg-gray-100 dark:hover:bg-lime-300 dark:hover:text-black rounded-xl"
-          >Contact</RouterLink
+          v-for="(page, index) in pages"
+          :key="index"
+          to="/auth"
+          class="lg:text-lg text-sm font-medium hover:text-lime-600 hover:underline hover:underline-offset-4 dark:hover:text-lime-300 dark:text-white dark:hover:underline dark:hover:underline-offset-4"
+          ><p>{{ page.name }}</p></RouterLink
         >
       </div>
     </div>
