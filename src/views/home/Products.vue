@@ -1,27 +1,33 @@
 <template>
   <div
-    class="lg:mt-0 mt-10 md:px-28 px-8 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-2 md:gap-10 gap-3">
+    class="lg:mt-0 mt-10 md:px-28 px-8 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-2 md:gap-10 gap-3"
+  >
     <div
       class="border border-black rounded-2xl dark:border-white"
-      v-for="product in products">
+      v-for="product in products"
+    >
       <div class="flex flex-col items-center">
         <img
           :src="product.icon"
           alt=""
-          class="w-full sm:h-34 h-20 py-4 sm:py-8 px-10 border-b border-black dark:bg-white rounded-2xl" />
+          class="w-full sm:h-34 h-20 py-4 sm:py-8 px-10 border-b border-black dark:bg-white rounded-2xl"
+        />
         <h2
-          class="capitalize mt-5 font-bold lg:text-3xl text-xl dark:text-white">
+          class="capitalize mt-5 font-bold lg:text-3xl text-xl dark:text-white"
+        >
           {{ product.name }}
         </h2>
       </div>
-      <div class="xl:px-10 px-2 py-5">
+      <div class="xl:px-10 px-2 py-5 font-semibold">
         <div
-          class="flex text-xs xl:flex-row flex-col justify-between sm:text-sm items-center dark:text-white">
+          class="flex text-md xl:flex-row flex-col justify-between sm:text-sm items-center dark:text-white"
+        >
           <p>Account Private U1</p>
           <p>{{ formatCurrency(product.price) }}</p>
         </div>
         <div
-          class="mt-2 text-xs flex xl:flex-row flex-col justify-between sm:text-sm items-center dark:text-white">
+          class="mt-2 text-md flex xl:flex-row flex-col justify-between sm:text-sm items-center dark:text-white"
+        >
           <p>Account Sharing U4</p>
           <p>{{ formatCurrency(product.price + 30000) }}</p>
         </div>

@@ -2,15 +2,18 @@
   <div class="h-screen">
     <Navbar />
     <div
-      class="flex pt-30 xl:px-28 sm:px-16 px-8 py-10 gap-10 h-full transition-all duration-300">
+      class="flex pt-30 xl:px-28 sm:px-16 px-8 py-10 gap-10 h-full transition-all duration-300"
+    >
       <div class="w-[40%] border rounded-xl hidden xl:block">
         <Image
           imageClass="bg-cover bg-center w-full h-full rounded-xl"
           :src="landscape"
-          alt="Image" />
+          alt="Image"
+        />
       </div>
       <div
-        class="w-full lg:p-10 p-7 pb-0 lg:pb-0 flex flex-col border rounded-xl overflow-hidden">
+        class="w-full lg:p-10 p-7 pb-0 lg:pb-0 flex flex-col border rounded-xl overflow-hidden"
+      >
         <h2 class="lg:mb-5 mb-3 font-bold text-4xl">Pesanan</h2>
         <div class="flex flex-col">
           <div class="card">
@@ -20,26 +23,30 @@
                   v-for="tab in tabs"
                   :key="tab.value"
                   :value="tab.value"
-                  class="flex items-center text-xs lg:text-sm">
+                  class="flex items-center text-xs lg:text-sm"
+                >
                   {{ tab.label }}
                   <Badge
                     v-if="tab.length != 0"
                     :value="tab.length"
                     class="ms-2"
-                    size="small" />
+                    size="small"
+                  />
                 </Tab>
               </TabList>
               <TabPanels>
                 <TabPanel
                   v-for="tab in tabs"
                   :key="tab.value"
-                  :value="tab.value">
+                  :value="tab.value"
+                >
                   <h2 v-if="tab.length == 0">Pesanan anda tidak ada.</h2>
                   <ScrollPanel style="width: 100%; height: 600px">
                     <component
                       :is="tab.component"
                       v-for="i in tab.length"
-                      :key="i" />
+                      :key="i"
+                    />
                   </ScrollPanel>
                 </TabPanel>
               </TabPanels>
